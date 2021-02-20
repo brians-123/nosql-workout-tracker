@@ -1,13 +1,3 @@
-// get all workout data from back-end
-
-// fetch("/api/workouts/range")
-//   .then(response => {
-//     return response.json();
-//   })
-//   .then(data => {
-//     populateChart(data);
-//   });
-
 function generatePalette() {
   const arr = [
     "#003f5c",

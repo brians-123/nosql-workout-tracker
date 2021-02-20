@@ -3,6 +3,7 @@ const { Workout } = require("../Models");
 //I don't need this if deconstructing into workout
 // const model = require("../Models");
 
+//look at using aggregate here as well
 router.get("/api/workouts", (req, res) => {
   Workout.find({})
     .then(dbWorkout => {
