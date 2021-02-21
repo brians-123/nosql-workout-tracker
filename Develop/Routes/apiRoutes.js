@@ -32,7 +32,6 @@ router.put("/api/workouts/:id", (req, res) => {
 });
 
 router.post("/api/workouts", (req, res) => {
-  console.log(req.body);
   Workout.create({}) //look at this later
     .then(dbWorkout => {
       res.json(dbWorkout);
@@ -43,7 +42,6 @@ router.post("/api/workouts", (req, res) => {
 });
 
 router.get("/api/workouts/range", (req, res) => {
-  console.log(req.body);
   Workout.aggregate([
     {
       $addFields: {
