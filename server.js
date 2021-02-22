@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 8080;
 
-const db = require("./models");
+const db = require("./Models");
 const { Router } = require("express");
 
 const app = express();
